@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'biblioteca/parciais/head.html'%}
+<body>
+    {% if nome %}
+        <h2>{{nome}}</h2>
+
+        
+        <p>Descrição : {{descricao}}</p>
+        <p>tags : {{tags}}</p>
+        <p>Autor : {{responsavel.nome}} {{responsavel.sobrenome}}</p>
+        <img src="{{foto.url}}"><br>
+
+        <p>Nome do livro: {{nome}}</p>
+    {% else %}
+        <p>Livro desconhecido!</p>
+    {% endif %}
+    <a href="{% url 'biblio:sobre' %}">Voltar</a>
+</body>
+</html>

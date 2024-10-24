@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include 'biblioteca/parciais/head.html' %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EspAaço CresCcer Biblioteca Virtual</title>
+    </head>
+    <body>
+<ul>
+    {% for livro in livros %}    
+    <li><a href="livro/{{livro.sigla}}">{{livro.livro}}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

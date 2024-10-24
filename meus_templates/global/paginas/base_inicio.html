@@ -1,0 +1,13 @@
+{% extends 'global/paginas/base_inicio.html' %}
+{% load static %}
+
+{% block css_app %}
+    <link rel="stylesheet" href="{% static 'biblioteca/css/estilos.css' %}">
+{% endblock css_app %}
+
+{% block titulo_app %}Biblioteca Virtual{% endblock titulo_app %}
+
+{% block h2_app %}Biblioteca Virtual{% endblock h2_app %}
+{% block menu_app %}
+    {% include 'biblioteca/parciais/menu.html' %}
+{% endblock menu_app %}

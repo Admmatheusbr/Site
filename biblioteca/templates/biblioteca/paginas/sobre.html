@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include 'biblioteca/parciais/head.html' %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EspAaço CresCer Biblioteca Virtual</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+                font-size: 1.2em; /* Aumenta o tamanho da fonte globalmente */
+                line-height: 1.5; /* Melhora a legibilidade */
+                font-family: Arial, sans-serif; /* Define a fonte padrão */
+                margin: 20px; /* Margem em torno do conteúdo */
+            }
+            h1 {
+                font-size: 2.5em; /* Tamanho do título principal */
+                color: #2c3e50; /* Cor do título */
+                text-align: center; /* Centraliza o título */
+                margin-bottom: 20px; /* Espaço abaixo do título */
+            }
+            h2 {
+                font-size: 1.8em; /* Tamanho dos subtítulos */
+                color: #34495e; /* Cor dos subtítulos */
+                margin-top: 20px; /* Espaço acima do subtítulo */
+                margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+            }
+            ul {
+                margin-left: 20px; /* Espaço à esquerda das listas */
+            }
+            footer {
+                text-align: center; /* Centraliza o texto no rodapé */
+                margin-top: auto; /* Empurra o footer para o final da página */
+                padding: 10px 0; /* Adiciona um pouco de espaço ao redor do texto */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>EspAaço CresCcer Biblioteca Virtual</h1>
+        {% include 'biblioteca/parciais/menu.html' %}
+        
+        <h2>Lista de Livros</h2>
+        <body>
+            <ul>
+                {% for livro in DADOS %}    
+                <li><a href="livro/{{livro.sigla}}">{{livro.nome}}</a></li>
+                {% endfor %}
+            </ul>
+            </body>
+            
+        <!-- <h2>Lista de Audiobooks</h2>
+        <ul>
+            <li>Harry Potter e a pedra filosofal</li>
+            <li>O alquimista</li>
+            <li>Bem-vindo à livraria hyunam-dong</li>
+            <li>O reizinho autista</li>
+            <li>A diferença invisível</li>
+        </ul>
+
+        <h2>Livros on demand</h2>
+        <p>Você deseja ter algum livro em áudio ou em audiovisual? Entre em contato para ver a viabilidade do projeto.</p> -->
+
+        <footer>
+            <p>© Copyright EspAaço CresCcer. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

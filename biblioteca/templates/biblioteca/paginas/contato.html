@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        {% include 'biblioteca/parciais/head.html' %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EspAaço CresCcer - Informações de Contato</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+                font-size: 1.2em; /* Aumenta o tamanho da fonte globalmente */
+                line-height: 1.5; /* Melhora a legibilidade */
+                font-family: Arial, sans-serif; /* Define a fonte padrão */
+                padding: 20px; /* Adiciona um pouco de espaçamento interno */
+            }
+            h1 {
+                font-size: 2.5em; /* Tamanho do título principal */
+                color: #2c3e50; /* Cor do título */
+                text-align: center; /* Centraliza o título */
+                margin-bottom: 20px; /* Espaço abaixo do título */
+            }
+            h2 {
+                font-size: 1.8em; /* Aumenta o tamanho da fonte dos subtítulos */
+                color: #34495e; /* Cor dos subtítulos */
+                margin-top: 20px; /* Espaço acima do subtítulo */
+                margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+            }
+            footer {
+                margin-top: auto; /* Empurra o footer para o final da página */
+                text-align: center; /* Centraliza o texto no rodapé */
+                padding: 10px 0; /* Adiciona um pouco de espaço ao redor do texto */
+            }
+        </style>
+    </head>
+    <body>        
+
+        <h2>{% include 'biblioteca/parciais/titulo.html' %}</h2> 
+
+        <h2>Informações de Contato</h2>
+        <p>Tel: +55 (51) 3336.1410</p>
+        <p>Whatsapp: +55 (51) 3336.1410</p>
+        <p>Email: <a href="mailto:espacocrescercontato@gmail.com">espacocrescercontato@gmail.com</a></p>
+        <p>Horário de Funcionamento: de segunda a sexta das 9h às 18h</p>
+
+        <footer>
+            <p>© Copyright EspAaço CresCcer. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

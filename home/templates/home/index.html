@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    {% include 'biblioteca/parciais/head.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+            font-size: 1.2em; /* Aumenta o tamanho da fonte globalmente */
+            line-height: 1.5; /* Melhora a legibilidade */
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            margin: 20px; /* Margem em torno do conteúdo */
+        }
+        h1, h2 {
+            color: #2c3e50; /* Cor dos títulos */
+            margin-top: 20px; /* Espaço acima dos títulos */
+        }
+        h1 {
+            font-size: 2.5em; /* Aumenta o tamanho do título principal */
+            text-align: center; /* Centraliza o título principal */
+        }
+        h2 {
+            font-size: 1.8em; /* Aumenta o tamanho dos subtítulos */
+        }
+        p {
+            margin-bottom: 15px; /* Espaço abaixo dos parágrafos */
+        }
+        .contact {
+            margin-top: 20px; /* Espaço acima da seção de contato */
+            font-weight: bold; /* Destaca o texto de contato */
+        }
+        footer {
+            margin-top: auto; /* Empurra o footer para o final da página */
+            text-align: center; /* Centraliza o texto no rodapé */
+            padding: 10px 0; /* Adiciona um pouco de espaço ao redor do texto */
+        }
+    </style>
+</head>
+<body>
+    <h1>EspAaço CresCcer Tech</h1>
+    <!--{% include 'global/home.html' %} -->
+    {% include 'biblioteca/parciais/titulo.html' %}
+    
+    <h1>Bem-vindo à nossa Biblioteca Virtual: acesso e inclusão para Todos</h1>
+    
+    <p>Nossa biblioteca virtual foi criada com o objetivo de promover o acesso à literatura e ao conhecimento para pessoas com autismo. Aqui, oferecemos uma vasta coleção de livros e audiobooks, cuidadosamente selecionados para atender às diversas necessidades e interesses de nossos usuários.</p>
+    
+    <h2>Por que escolher nossa biblioteca?</h2>
+    <ul>
+        <li><strong>Conteúdo Adaptado:</strong> Nossos materiais são pensados para serem acessíveis e inclusivos, proporcionando uma experiência enriquecedora.</li>
+        <li><strong>Diversidade de Gêneros:</strong> Desde literatura infantil até obras de não-ficção, temos opções para todas as idades e preferências.</li>
+        <!-- <li><strong>Audiobooks:</strong> Oferecemos uma ampla seleção de audiobooks, permitindo que nossos usuários aproveitem histórias de uma forma que pode ser mais confortável e envolvente.</li> -->
+        <li><strong>Ambiente Acolhedor:</strong> Nossa plataforma foi desenvolvida para ser intuitiva e amigável, facilitando a navegação e a busca por conteúdos relevantes.</li>
+    </ul>
+    
+    <h2>Compromisso com a Inclusão</h2>
+    <p>Acreditamos que a leitura é um direito de todos. Nossa missão é garantir que pessoas com autismo tenham acesso a materiais que estimulem sua imaginação, aprendizado e desenvolvimento.</p>
+    
+    <h2>Junte-se a Nós!</h2>
+    <p>Explore nossa biblioteca e descubra um mundo de possibilidades. Estamos aqui para apoiar a sua jornada literária!</p>
+    
+    <div class="contact">
+        <h2>Contate-nos</h2>
+        <p>Se você tiver alguma dúvida ou sugestão, não hesite em nos contatar. Sua opinião é fundamental para que possamos continuar melhorando e expandindo nossos serviços.</p>
+    </div>
+    
+    <h2>Vamos juntos transformar a leitura em uma experiência acessível e prazerosa!</h2>
+
+    <img src="{% static 'biblioteca/images/images.jpg' %}" width="200px" style="display: block; margin: 20px auto;"> <!-- Centraliza a imagem -->
+
+    <footer>
+        <p>© Copyright EspAaço CresCcer. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
